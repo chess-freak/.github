@@ -1,6 +1,6 @@
 # Chess Freak
 
-![logo](./assets/chess-freak.png)
+![logo](./assets/chess-freak.svg)
 
 - 열심히 하면 강퇴
 - 모두가 주인이라는 마음 가짐

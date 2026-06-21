@@ -1,0 +1,54 @@
+name: 버그 신고
+description: 체스판이 이상해졌거나, 의도와 다르게 동작할 때 사용합니다.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        문제가 재현되면 꽤 치명적일 수 있습니다. 가능한 한 구체적으로 적어주세요.
+  - type: textarea
+    id: summary
+    attributes:
+      label: 무엇이 문제인가요?
+      description: 어떤 현상이 기대와 다르게 보였는지 적어주세요.
+      placeholder: 예) 흑백이 뒤바뀌어서 말이 자꾸 반대로 움직입니다.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 재현 방법
+      description: 다른 사람이 그대로 따라 했을 때 재현할 수 있게 적어주세요.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대한 동작
+      placeholder: 예) 체스 규칙에 맞게 정상적으로 동작해야 합니다.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 실제 동작
+      placeholder: 예) 킹이 폰처럼 움직입니다.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 환경
+      description: 브라우저, OS, 버전 등
+      placeholder: 예) macOS 14 / Chrome 126 / local
+  - type: textarea
+    id: extra
+    attributes:
+      label: 추가 정보
+      description: 스크린샷, 로그, 관련 링크가 있으면 넣어주세요.
